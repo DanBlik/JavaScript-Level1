@@ -62,14 +62,19 @@ var different = function () {
 }
 
 //Задание 5
-var list = document.querySelector('#list');
-var list1 = document.querySelector('#list1');
-var li = document.createElement('li');
-li.innerText = 'Первый элемент списка'
+var flag = true;
+function changeFirstElem() {
+    if (flag) {
+        var list = document.querySelector('#list');
+        var list1 = document.querySelector('#list1');
+        var li = document.createElement('li');
+        list.insertBefore(li, list1);
+        li.innerText = 'Первый элемент списка';
+        flag = false;
+    }
+    else alert('Первый элемент уже создан!');
+}
 
-list.insertBefore(li, list1);
-
-console.log(list);
 
  
 
