@@ -4,3 +4,19 @@
 .hello2{
     display: none;
 }
+
+button {
+    width: 160px;
+    height: 40px;
+    background: #fff4e1;
+    border: 0;
+    transition-duration: 0.5s;
+    padding-top: 3px;
+    margin-top: 10px;
+}
+button:hover {
+    background: #ffebb7;
+}
+body {
+    background: #9ddcdc;
+}
