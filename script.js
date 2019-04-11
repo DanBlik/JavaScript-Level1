@@ -25,6 +25,7 @@ for (var i = 0; i < task3.children.length; i++) {
 
 //Задание 4
 
+var span = document.querySelector('span');
 
 var input1 = function () {
     var input = document.getElementById('input1').value;
@@ -39,23 +40,36 @@ var input2 = function () {
 var sum = function () {
     var result = input1() + input2();
     document.getElementById('result').innerText = result;
+    span.innerText = '+';
 }
 
 var mult = function () {
     var result = input1() * input2();
     document.getElementById('result').innerText = result;
+    span.innerText = '*';
 }
 
 var div = function () {
     var result = input1() / input2();
     document.getElementById('result').innerText = result;
+    span.innerText = '/';
 }
 
 var different = function () {
     var result = input1() - input2();
     document.getElementById('result').innerText = result;
+    span.innerText = '-';
 }
 
+//Задание 5
+var list = document.querySelector('#list');
+var list1 = document.querySelector('#list1');
+var li = document.createElement('li');
+li.innerText = 'Первый элемент списка'
+
+list.insertBefore(li, list1);
+
+console.log(list);
 
  
 

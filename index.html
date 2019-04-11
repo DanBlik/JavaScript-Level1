@@ -34,11 +34,22 @@
 
         <section>
             <p>Калькулятор</p>
-            <input type="text" id="input1" value="" onchange="input1()"> <span>?</span> <input type="text" id="input2" value="" onchange="input2()"> = <span id="result">результат</span><br>
+            <input type="text" id="input1" value="" onchange="input1()"> <span id="span">?</span> <input type="text" id="input2" value="" onchange="input2()"> = <span id="result">результат</span><br>
             <button onclick="sum()">+</button> 
             <button onclick="different()">-</button> 
             <button onclick="mult()">*</button> 
             <button onclick="div()">/</button> 
+        </section>
+
+        <section>
+            <p>Дан элемент ul, а в нем li #list. Вставьте перед элементом #list новую li с текстом 'Первый элемент списка'</p>
+            <ul id="list">
+                <li id="list1">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
         </section>
     </div>
     <script src="script.js"></script>
