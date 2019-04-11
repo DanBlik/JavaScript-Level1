@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 5</title>
+</head>
+<body>
+    <div id="main">
+        <section id="firstTask">
+                <p id="p1">1. Есть кнопка button рядом с ней есть текст (Hello) необходимо при нажатии на кнопку поменять текст кнопки на (Привет)</p>
+                <button id="button" onclick="changeTxt()">Hello</button>
+        </section> 
+        
+        <section>
+                <p id="p2">2. Есть кнопка button рядом с ней есть тэг &lt;b&gt;&lt;/b&gt; (Hello) необходимо при нажатии на кнопку поменять тэг на &lt;h3&gt;&lt;/h3&gt;</p>
+                <button id="button2" onclick="changeTag()">Кнопка</button>
+                <b class="hello1">Hello</b>
+                <h3 class="hello2">Hello</h3>
+        </section>
+
+        <section>
+            <p>3. Заменить list на list[i]</p>
+            <h2>Заголовок.</h2>
+            <ul id="task3">
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Калькулятор</p>
+            <input type="text" id="input1" value="" onchange="input1()"> <span id="span">?</span> <input type="text" id="input2" value="" onchange="input2()"> = <span id="result">результат</span><br>
+            <button onclick="sum()">+</button> 
+            <button onclick="different()">-</button> 
+            <button onclick="mult()">*</button> 
+            <button onclick="div()">/</button> 
+        </section>
+
+        <section>
+            <p>Дан элемент ul, а в нем li #list. Вставьте перед элементом #list новую li с текстом 'Первый элемент списка'</p>
+            <ul id="list">
+                <li id="list1">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <button id="button5" onclick="changeFirstElem()">Добавить первый элемент</button>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
